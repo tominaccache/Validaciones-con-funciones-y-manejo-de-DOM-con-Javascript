@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Calificaciones</h1>
+        <div class="input-group">
+            <label for="notaMatematica">Matematica </label>
+            <input type="text" id="notaMatematica" required>
+            <br>
+        </div>
+            
+            <div class="input-group">
+                <label for="notaLengua">Lengua </label>
+                <input type="text" id="notaLengua" required>
+                <br>
+            </div>
+            <div class="input-group" >
+                <label for="notaEFSI">Efsi </label>
+                <input type="text" id="notaEFSI"  required>
+            </div>
+            <br>
+            <div id="verresultado" class="result-container"></div>
+            <div>
+                <div class="button-group">
+            <button type="button" onclick="calcularpromedio()">Calcular Promedio</button>
+             <button type="button" onclick="Materiaconmayornota()">Materia con mayor nota</button>    
+                </div>
+            </div>
+    </div>
+   
+    <script src="./js/codigo.js"></script>
+</body>
+</html>
